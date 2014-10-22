@@ -1,57 +1,27 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>The Bruh Button</title>
 
-	<style>
-		  body {background-color: black}
-		  h1   {color:blue}
-		  p    {color: white}
-
-
-		  div {
-		    height: 200px;
-		    width: 400px;
-		    background: black;
-
-		    position: fixed;
-		    top: 50%;
-		    left: 50%;
-		    margin-top: -100px;
-		    margin-left: -200px;
-			}
-
-	</style>
-
+	<link rel="stylesheet" href="style.css">
+	<meta name="description" content="A simple button that says Bruh when you click it">
+	<meta name="keywords" content="bruh,Kamesh,Vedula,iTeenageCoder">
+	<title>Bruh</title>
+	<script src="//www.parsecdn.com/js/parse-1.3.0.min.js"></script>
 </head>
 <body>
 
-<center><font face="Homestead-Display" color="white" size="90">BRUH</font></center>
+	<button onclick="bruh()" style="height:100% ; width:100%">
+		<h1>Bruh | Click Anywhere | Bruh</h1>
+		<h3>Made with <i class="fa fa-heart" style="color: red"></i> by <a href="http://kameshvedula.com"> Kamesh "Code"ula</a></h3>
+	</button>
 
-<div>
-
+	<script type="text/javascript">new WOW().init();</script>
 	<script type="text/javascript">
-		var snd = new Audio("sound/bruh.mp3");
-		snd.play();
-		snd.currentTime=0;
+		function bruh()
+		{
+			var audio = new Audio('bruh.mp3');
+			audio.play();
+		}
 	</script>
-
-	<a href="bruh.html">
-		
-		<center><img src="image/bruh.jpg" alt="bruh" height="90%" width="90%"></center>
-
-	</a>
-
-</div>
-
 </body>
 </html>
-
-
-
-
-
-
-
-
-
