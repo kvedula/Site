@@ -10,7 +10,7 @@
 	<style type="text/css">
 
 	body{
-		background-color: #508484;
+		background-color: #3b5998;
 	}
 
 	.title{
@@ -28,14 +28,14 @@
 	}
 
 	.messages::-webkit-scrollbar{
-		background-color: #65A38B;
+		background-color: #8b9dc3;
 		border-radius: 10px;
 	}
 
 	.container{
 		border-radius: 5px;
 		min-height: 500px;
-		background-color: #77BFA3;
+		background-color: #dfe3ee;
 		min-width: 500px;
 		max-width: 500px;
 		padding-bottom: 10px;
@@ -55,8 +55,9 @@
 </head>
 <body onload="displayName()">
 
-	<div class = "title">ChatBox</div>
+	<div class = "title">Messenger</div>
 
+	<!--Maessage-->
 	<div class = "container">
 		<div class = "messages">
 		</div>
@@ -70,15 +71,27 @@
 		    </div><!-- /input-group -->
 		  </div><!-- /.col-lg-6 -->
 		</div><!-- /.row -->
-	</div>
+<!--
+		
+		<div class="row">
+		  <div class="col-lg-6">
+		    <div class="input-group">
+		      <input type="text" class="username form form-control" placeholder="Type your name...">
+		      <span class="input-group-btn">
+		        <button class="btn btn-default" type="button">Enter</button>
+		      </span>
+		    </div><
+		  </div>
+		</div>
+	</div>-->
 
 <script type = "text/javascript">
 
 var name = "";
-function displayName(){
-	name =  prompt("Please enter your name!");
-}
 
+function displayName(){
+	name  = prompt("What is your name?");
+}
 
 var message = "";
 
@@ -103,7 +116,7 @@ function sendMessage(){
 	console.log('clicked');
 	
 	var text = $(".form").val();
-	$(".form").val("");
+	$(".form-control").val("");
 
 	if (text != ""){
 		firebase.push({
