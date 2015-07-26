@@ -9,7 +9,7 @@ firebase.on('child_added', function(itemData) {
 	$('#portfolio').append(
 
 		'<div class="work">' + 
-			'<a href="' + item.link + '" target="_blank" id="facter">' +
+			'<a href="' + item.link + '" target="_blank">' +
 				'<img src="img/' + item.image + '" class="media" alt/>' +
 				'<div class="caption">' +
 					'<div class="work_title">' +
