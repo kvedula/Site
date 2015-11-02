@@ -1,35 +1,87 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>Sorry Aish.</title>
+	<head>
+		<title>Kamesh's Closet</title>
+		<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" rel="stylesheet">
+		<style>
+		.thumb {
+			border-radius:8px;
+			padding:10px;
+			margin:5px;
+			margin-top:10px;
+		}
+		.thumb input {
+			width:100%;
+			border:none;
+			margin-top:80px;
+			font-size:20px;
+			text-align: center;
+			height:40px;
+			font-weight:700;
+		}
+		.thumb img {
+			transform: rotate(90deg);
+		    -webkit-transform: rotate(90deg);
+	    	-ms-transform: rotate(90deg);
+			margin-top:50px;
+			height:100%;
+			width:100%;
+		}
+		.thumb button.remove {
+			width:50%;
+			display:block;
+			margin:0 auto;
+			background:#F44336;
+			border:none;
+			font-size:12px;
+			padding:5px 15px;
+			border-radius:5px;
+			font-weight:700;
+			color:#ffffff;
+		}
+		.thumb button.remove:hover {
+			background:#EF5350;
+		}
+		</style>
+	</head>
+	<body>
 
-	<style type="text/css">
+		<h1><center>Kamesh's Closet</center></h1>
+		<div class="row">
+			<div id="c0" class="col-md-3 col-sm-6"></div>
+			<div id="c1" class="col-md-3 col-sm-6"></div>
+			<div id="c2" class="col-md-3 col-sm-6"></div>
+			<div id="c3" class="col-md-3 col-sm-6"></div>
+		</div>
 
-	@font-face { font-family: SanFran; src: url('SanFranciscoUltraLight.ttf'); }
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+		<script src="https://cdn.firebase.com/js/client/2.2.1/firebase.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function() {
+				var fb = new Firebase("https://kvedula.firebaseio.com"), column = 0;
 
-	body{
-		background-color: black;
-		overflow: hidden;
-	}
+				fb.on('child_added', function(c) {
+					var img = document.createElement("img"),
+						thumbnail = $('<div></div>').addClass('thumb'),
+						thumbnailInput = $('<input>').attr('placeholder', 'name').val(c.val().name);
 
-	.sorry{
-		color: white;
-		font-size: 100px;
-		font-family: SanFran;
-		text-align: center;
-		font-size: 41px;	
-		position: absolute;
-	    top: 50%;
-	    left: 50%;
-	    transform: translateX(-50%) translateY(-50%);
-	}
+					img.setAttribute("src", 'data:image/png;base64,' + c.val().image);
+					thumbnail.append(img).append(thumbnailInput)
+						.append($('<button></button>').text('remove').addClass('remove')
+							.click(function() {
+								fb.child(c.key()).remove();
+								thumbnail.hide();
+							}));
 
+					thumbnailInput.on('keyup', function() {
+						fb.child(c.key()).child('name').set(thumbnailInput.val());
+					});
 
-	</style>
-</head>
-<body>
-
-	<div class = "sorry"> Sorry for being irritating. Could you forgive me. :( </div>
-
-</body>
+					$('#c' + column).append(thumbnail);
+					column = (column + 1) % 4;
+				});
+			});
+		</script>
+	</body>
 </html>
