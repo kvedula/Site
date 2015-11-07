@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <!--Import Google Icon Font-->
+      <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+
+      <!-- My Stylesheet -->
+      <link rel="stylesheet" type="text/css" href="css/style.css">
+
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </head>
+
+    <body>
+      <!--Import jQuery before materialize.js-->
+      <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+      <script type="text/javascript" src="js/materialize.min.js"></script>
+      <script src='https://cdn.firebase.com/js/client/2.2.1/firebase.js'></script>
+      <script type="text/javascript" src="js/script.js"></script>
+
+      <header class = "header indigo z-depth-1 center-align" style="padding-top: 50px;">
+        <img src="images/me1.jpg" alt class="circle responsive-img">
+        <h1 class="center-align" style="padding-bottom: 50px; color: white;">My Colleges</h1>
+      </header>
+
+        <div class="row" id="colleges">
+
+
+        <div class="col s12 m6 l4 center-align">
+        <!-- Promo Content 1 goes here -->
+
+        <div class="col s12 m12">
+          <div class="card">
+            <div class="card-image">
+              <img src="images/upenn.jpg">
+              <span class="card-title">University of Pennsylvania</span>
+            </div>
+            <div class="card-content">
+              <p>I am a very simple card. I am good at containing small bits of information.
+              I am convenient because I require little markup to use effectively.</p>
+            </div>
+            <div class="card-action">
+              <a href="#">This is a link</a>
+            </div>
+          </div>
+        </div>
+      
+        </div>
+
+        <div class="col s12 m6 l4 center-align">
+        <!-- Promo Content 2 goes here -->
+
+        <!-- Stanford -->
+
+        <div class="col s12 m12">
+          <div class="card">
+            <div class="card-image">
+              <img src="images/stanford.jpg">
+              <span class="card-title">Stanford University</span>
+            </div>
+            <div class="card-content">
+              <p>I am a very simple card. I am good at containing small bits of information.
+              I am convenient because I require little markup to use effectively.</p>
+            </div>
+            <div class="card-action">
+              <a href="#">This is a link</a>
+            </div>
+          </div>
+        </div>
+        
+
+        </div>
+
+        <div class="col s12 m6 l4 center-align">
+        <!-- Promo Content 3 goes here -->
+
+        <div class="col s12 m12">
+          <div class="card">
+            <div class="card-image">
+              <img src="images/berk.jpg">
+              <span class="card-title">University of California, Berkeley</span>
+            </div>
+            <div class="card-content">
+              <p>I am a very simple card. I am good at containing small bits of information.
+              I am convenient because I require little markup to use effectively.</p>
+            </div>
+            <div class="card-action">
+              <a href="#">This is a link</a>
+            </div>
+          </div>
+        </div>
+
+        </div>
+
+        <div class="col s12 m6 l4 center-align">
+        <!-- Promo Content 3 goes here -->
+
+        <div class="col s12 m12">
+          <div class="card">
+            <div class="card-image">
+              <img src="images/ucla.jpg">
+              <span class="card-title">University of California, Los Angeles</span>
+            </div>
+            <div class="card-content">
+              <p>I am a very simple card. I am good at containing small bits of information.
+              I am convenient because I require little markup to use effectively.</p>
+            </div>
+            <div class="card-action">
+              <a href="#">This is a link</a>
+            </div>
+          </div>
+        </div>
+        
+        </div>
+
+        <div class="col s12 m6 l4 center-align">
+        <!-- Promo Content 3 goes here -->
+
+        <div class="col s12 m12">
+          <div class="card">
+            <div class="card-image">
+              <img src="images/usc.jpg">
+              <span class="card-title">University of Southern California</span>
+            </div>
+            <div class="card-content">
+              <p>I am a very simple card. I am good at containing small bits of information.
+              I am convenient because I require little markup to use effectively.</p>
+            </div>
+            <div class="card-action">
+              <a href="#">This is a link</a>
+            </div>
+          </div>
+        </div>
+        
+        </div>
+
+        <div class="col s12 m6 l4 center-align">
+        <!-- Promo Content 3 goes here -->
+
+        <div class="col s12 m12">
+          <div class="card">
+            <div class="card-image">
+              <img src="images/scu.jpg">
+              <span class="card-title">Santa Clara University</span>
+            </div>
+            <div class="card-content">
+              <p>I am a very simple card. I am good at containing small bits of information.
+              I am convenient because I require little markup to use effectively.</p>
+            </div>
+            <div class="card-action">
+              <a href="#">This is a link</a>
+            </div>
+          </div>
+        </div>
+        
+        </div>
+
+        <div class="col s12 m6 l4 center-align">
+        <!-- Promo Content 3 goes here -->
+
+        <div class="col s12 m12">
+          <div class="card">
+            <div class="card-image">
+              <img src="images/umich.jpg">
+              <span class="card-title">University of Michigan</span>
+            </div>
+            <div class="card-content">
+              <p>I am a very simple card. I am good at containing small bits of information.
+              I am convenient because I require little markup to use effectively.</p>
+            </div>
+            <div class="card-action">
+              <a href="#">This is a link</a>
+            </div>
+          </div>
+        </div>
+        
+        </div>
+
+        <div class="col s12 m6 l4 center-align">
+        <!-- Promo Content 3 goes here -->
+
+        <div class="col s12 m12">
+          <div class="card">
+            <div class="card-image">
+              <img src="images/gtech.jpg">
+              <span class="card-title">Georgia Institute of Technology</span>
+            </div>
+            <div class="card-content">
+              <p>I am a very simple card. I am good at containing small bits of information.
+              I am convenient because I require little markup to use effectively.</p>
+            </div>
+            <div class="card-action">
+              <a href="#">This is a link</a>
+            </div>
+          </div>
+        </div>
+        
+        </div>
+
+        <div class="col s12 m6 l4 center-align">
+        <!-- Promo Content 3 goes here -->
+
+        <div class="col s12 m12">
+          <div class="card">
+            <div class="card-image">
+              <img src="images/uiuc.jpg">
+              <span class="card-title">University of Illinois, Urbana-Chapaign</span>
+            </div>
+            <div class="card-content">
+              <p>I am a very simple card. I am good at containing small bits of information.
+              I am convenient because I require little markup to use effectively.</p>
+            </div>
+            <div class="card-action">
+              <a href="#">This is a link</a>
+            </div>
+          </div>
+        </div>
+        
+        </div>
+
+        <div class="col s12 m6 l4 center-align">
+        <!-- Promo Content 3 goes here -->
+
+        <div class="col s12 m12">
+          <div class="card">
+            <div class="card-image">
+              <img src="images/nyu.jpg">
+              <span class="card-title">New York University</span>
+            </div>
+            <div class="card-content">
+              <p>I am a very simple card. I am good at containing small bits of information.
+              I am convenient because I require little markup to use effectively.</p>
+            </div>
+            <div class="card-action">
+              <a href="#">This is a link</a>
+            </div>
+          </div>
+        </div>
+        
+        </div>
+
+
+
+
+        <div class="col s12 m6 l4 center-align">
+        <!-- Promo Content 3 goes here -->
+
+        <div class="col s12 m12">
+          <div class="card">
+            <div class="card-image">
+              <img src="images/boston.jpg">
+              <span class="card-title">Boston University</span>
+            </div>
+            <div class="card-content">
+              <p>I am a very simple card. I am good at containing small bits of information.
+              I am convenient because I require little markup to use effectively.</p>
+            </div>
+            <div class="card-action">
+              <a href="#">This is a link</a>
+            </div>
+          </div>
+        </div>
+        
+        </div>
+
+
+
+        <div class="col s12 m6 l4 center-align">
+        <!-- Promo Content 3 goes here -->
+
+        <div class="col s12 m12">
+          <div class="card">
+            <div class="card-image">
+              <img src="images/ne.jpg">
+              <span class="card-title">Northeastern University</span>
+            </div>
+            <div class="card-content">
+              <p>I am a very simple card. I am good at containing small bits of information.
+              I am convenient because I require little markup to use effectively.</p>
+            </div>
+            <div class="card-action">
+              <a href="#">This is a link</a>
+            </div>
+          </div>
+        </div>
+        
+        </div>
+
+
+        <div class="col s12 m6 l4 center-align">
+        <!-- Promo Content 3 goes here -->
+
+        <div class="col s12 m12">
+          <div class="card">
+            <div class="card-image">
+              <img src="images/ucsd.jpg">
+              <span class="card-title">University of California, San Diego</span>
+            </div>
+            <div class="card-content">
+              <p>I am a very simple card. I am good at containing small bits of information.
+              I am convenient because I require little markup to use effectively.</p>
+            </div>
+            <div class="card-action">
+              <a href="#">This is a link</a>
+            </div>
+          </div>
+        </div>
+        
+        </div>
+
+
+        <div class="col s12 m6 l4 center-align">
+        <!-- Promo Content 3 goes here -->
+
+        <div class="col s12 m12">
+          <div class="card">
+            <div class="card-image">
+              <img src="images/uci.jpg">
+              <span class="card-title">University of California, Irvine</span>
+            </div>
+            <div class="card-content">
+              <p>I am a very simple card. I am good at containing small bits of information.
+              I am convenient because I require little markup to use effectively.</p>
+            </div>
+            <div class="card-action">
+              <a href="#">This is a link</a>
+            </div>
+          </div>
+        </div>
+        
+        </div>
+
+
+        <div class="col s12 m6 l4 center-align">
+        <!-- Promo Content 3 goes here -->
+
+        <div class="col s12 m12">
+          <div class="card">
+            <div class="card-image">
+              <img src="images/ucd.jpg">
+              <span class="card-title">University of California, Davis</span>
+            </div>
+            <div class="card-content">
+              <p>I am a very simple card. I am good at containing small bits of information.
+              I am convenient because I require little markup to use effectively.</p>
+            </div>
+            <div class="card-action">
+              <a href="#">This is a link</a>
+            </div>
+          </div>
+        </div>
+        
+        </div>
+            
+
+        <div class="col s12 m6 l4 center-align">
+        <!-- Promo Content 3 goes here -->
+
+        <div class="col s12 m12">
+          <div class="card">
+            <div class="card-image">
+              <img src="images/rose.jpg">
+              <span class="card-title">Rose-Hulman Institute of Technology</span>
+            </div>
+            <div class="card-content">
+              <p>I am a very simple card. I am good at containing small bits of information.
+              I am convenient because I require little markup to use effectively.</p>
+            </div>
+            <div class="card-action">
+              <a href="#">This is a link</a>
+            </div>
+          </div>
+        </div>
+        
+        </div>
+
+
+        <div class="col s12 m6 l4 center-align">
+        <!-- Promo Content 3 goes here -->
+
+        <div class="col s12 m12">
+          <div class="card">
+            <div class="card-image">
+              <img src="images/rpi.jpg">
+              <span class="card-title">Renssalear Polytechnic Institute</span>
+            </div>
+            <div class="card-content">
+              <p>I am a very simple card. I am good at containing small bits of information.
+              I am convenient because I require little markup to use effectively.</p>
+            </div>
+            <div class="card-action">
+              <a href="#">This is a link</a>
+            </div>
+          </div>
+        </div>
+        
+        </div>
+
+        <div class="col s12 m6 l4 center-align">
+        <!-- Promo Content 3 goes here -->
+
+        <div class="col s12 m12">
+          <div class="card">
+            <div class="card-image">
+              <img src="images/purdue.jpg">
+              <span class="card-title">Purdue University</span>
+            </div>
+            <div class="card-content">
+              <p>I am a very simple card. I am good at containing small bits of information.
+              I am convenient because I require little markup to use effectively.</p>
+            </div>
+            <div class="card-action">
+              <a href="#">This is a link</a>
+            </div>
+          </div>
+        </div>
+        
+        </div>
+
+
+        <div class="col s12 m6 l4 center-align">
+        <!-- Promo Content 3 goes here -->
+
+        <div class="col s12 m12">
+          <div class="card">
+            <div class="card-image">
+              <img src="images/uw.jpg">
+              <span class="card-title">University of Washington</span>
+            </div>
+            <div class="card-content">
+              <p>I am a very simple card. I am good at containing small bits of information.
+              I am convenient because I require little markup to use effectively.</p>
+            </div>
+            <div class="card-action">
+              <a href="#">This is a link</a>
+            </div>
+          </div>
+        </div>
+        
+        </div>
+
+
+
+        <div class="col s12 m6 l4 center-align">
+        <!-- Promo Content 3 goes here -->
+
+        <div class="col s12 m12">
+          <div class="card">
+            <div class="card-image">
+              <img src="images/utaustin.jpg">
+              <span class="card-title">University of Texas, Austin</span>
+            </div>
+            <div class="card-content">
+              <p>I am a very simple card. I am good at containing small bits of information.
+              I am convenient because I require little markup to use effectively.</p>
+            </div>
+            <div class="card-action">
+              <a href="#">This is a link</a>
+            </div>
+          </div>
+        </div>
+        
+        </div>
+
+
+
+        <div class="col s12 m6 l4 center-align">
+        <!-- Promo Content 3 goes here -->
+
+        <div class="col s12 m12">
+          <div class="card">
+            <div class="card-image">
+              <img src="images/ucsb.jpg">
+              <span class="card-title">University of California, Santa Barbara</span>
+            </div>
+            <div class="card-content">
+              <p>I am a very simple card. I am good at containing small bits of information.
+              I am convenient because I require little markup to use effectively.</p>
+            </div>
+            <div class="card-action">
+              <a href="#">This is a link</a>
+            </div>
+          </div>
+        </div>
+        
+        </div>
+
+
+
+        <div class="col s12 m6 l4 center-align">
+        <!-- Promo Content 3 goes here -->
+
+        <div class="col s12 m12">
+          <div class="card">
+            <div class="card-image">
+              <img src="images/ucsc.jpg">
+              <span class="card-title">University of California, Santa Cruz</span>
+            </div>
+            <div class="card-content">
+              <p>I am a very simple card. I am good at containing small bits of information.
+              I am convenient because I require little markup to use effectively.</p>
+            </div>
+            <div class="card-action">
+              <a href="#">This is a link</a>
+            </div>
+          </div>
+        </div>
+        
+        </div>
+
+
+
+
+        <div class="col s12 m6 l4 center-align">
+        <!-- Promo Content 3 goes here -->
+
+        <div class="col s12 m12">
+          <div class="card">
+            <div class="card-image">
+              <img src="images/csuslo.jpg">
+              <span class="card-title">California Polytechnic State University, San Luis Obispo</span>
+            </div>
+            <div class="card-content">
+              <p>I am a very simple card. I am good at containing small bits of information.
+              I am convenient because I require little markup to use effectively.</p>
+            </div>
+            <div class="card-action">
+              <a href="#">This is a link</a>
+            </div>
+          </div>
+        </div>
+        
+        </div>
+
+
+
+
+        <div class="col s12 m6 l4 center-align">
+        <!-- Promo Content 3 goes here -->
+
+        <div class="col s12 m12">
+          <div class="card">
+            <div class="card-image">
+              <img src="images/asu.jpg">
+              <span class="card-title">Arizona State University</span>
+            </div>
+            <div class="card-content">
+              <p>I am a very simple card. I am good at containing small bits of information.
+              I am convenient because I require little markup to use effectively.</p>
+            </div>
+            <div class="card-action">
+              <a href="#">This is a link</a>
+            </div>
+          </div>
+        </div>
+        
+        </div>
+
+
+        <div class="col s12 m6 l4 center-align">
+        <!-- Promo Content 3 goes here -->
+
+        <div class="col s12 m12">
+          <div class="card">
+            <div class="card-image">
+              <img src="images/sjsu.jpg">
+              <span class="card-title">San Jose State University</span>
+            </div>
+            <div class="card-content">
+              <p>I am a very simple card. I am good at containing small bits of information.
+              I am convenient because I require little markup to use effectively.</p>
+            </div>
+            <div class="card-action">
+              <a href="#">This is a link</a>
+            </div>
+          </div>
+        </div>
+        
+        </div>
+
+
+
+        <div class="col s12 m6 l4 center-align">
+        <!-- Promo Content 3 goes here -->
+
+        <div class="col s12 m12">
+          <div class="card">
+            <div class="card-image">
+              <img src="images/csupomona.jpg">
+              <span class="card-title">California Polytechnic State University, Pomona</span>
+            </div>
+            <div class="card-content">
+              <p>I am a very simple card. I am good at containing small bits of information.
+              I am convenient because I require little markup to use effectively.</p>
+            </div>
+            <div class="card-action">
+              <a href="#">This is a link</a>
+            </div>
+          </div>
+        </div>
+        
+        </div>
+
+
+      </div>
+
+
+
+    </body>
+  </html>
