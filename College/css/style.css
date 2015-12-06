@@ -6,3 +6,9 @@
 body{
 	background-color: #eeeeee;
 }
+
+#logout:hover{
+
+	color: red;
+
+}
