@@ -86,7 +86,7 @@
 		-ms-transform: translate3d(0,0,0);
 		transform: translate3d(0,0,0);
 		background-color: #348cb2;
-		background-image: url("images/bg.jpg");
+		
 		background-position: bottom left;
 		background-repeat: repeat-x;
 		height: 100%;
@@ -363,11 +363,11 @@
 /* Footer */
 
 	#footer {
-		background-image: -moz-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.5) 75%);
-		background-image: -webkit-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.5) 75%);
-		background-image: -o-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.5) 75%);
-		background-image: -ms-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.5) 75%);
-		background-image: linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.5) 75%);
+		/*background-image: -moz-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.5) 75%);*/
+		/*background-image: -webkit-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.5) 75%);*/
+		/*background-image: -o-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.5) 75%);*/
+		/*background-image: -ms-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.5) 75%);*/
+		/*background-image: linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.5) 75%);*/
 		bottom: 0;
 		cursor: default;
 		height: 6em;
