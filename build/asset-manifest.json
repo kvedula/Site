@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "kvedula.github.io/Site/static/css/main.4de1de90.chunk.css",
+    "main.js": "kvedula.github.io/Site/static/js/main.891fbdd2.chunk.js",
+    "main.js.map": "kvedula.github.io/Site/static/js/main.891fbdd2.chunk.js.map",
+    "runtime~main.js": "kvedula.github.io/Site/static/js/runtime~main.149b3d5b.js",
+    "runtime~main.js.map": "kvedula.github.io/Site/static/js/runtime~main.149b3d5b.js.map",
+    "static/js/2.db1f296d.chunk.js": "kvedula.github.io/Site/static/js/2.db1f296d.chunk.js",
+    "static/js/2.db1f296d.chunk.js.map": "kvedula.github.io/Site/static/js/2.db1f296d.chunk.js.map",
+    "index.html": "kvedula.github.io/Site/index.html",
+    "precache-manifest.6da77606e4ebd2acf8accd4bd9b00026.js": "kvedula.github.io/Site/precache-manifest.6da77606e4ebd2acf8accd4bd9b00026.js",
+    "service-worker.js": "kvedula.github.io/Site/service-worker.js",
+    "static/css/main.4de1de90.chunk.css.map": "kvedula.github.io/Site/static/css/main.4de1de90.chunk.css.map",
+    "static/media/christian.jpg": "kvedula.github.io/Site/static/media/christian.8d0060ef.jpg",
+    "static/media/photo-1.jpg": "kvedula.github.io/Site/static/media/photo-1.fc76e730.jpg",
+    "static/media/photo-2.jpg": "kvedula.github.io/Site/static/media/photo-2.64af8091.jpg",
+    "static/media/photo-3.jpg": "kvedula.github.io/Site/static/media/photo-3.32fb4cab.jpg",
+    "static/media/photo-4.jpg": "kvedula.github.io/Site/static/media/photo-4.dca6d3a3.jpg",
+    "static/media/photo-5.jpg": "kvedula.github.io/Site/static/media/photo-5.d2422a82.jpg",
+    "static/media/photo-6.jpg": "kvedula.github.io/Site/static/media/photo-6.542a54f2.jpg",
+    "static/media/photo-7.jpg": "kvedula.github.io/Site/static/media/photo-7.d859506c.jpg",
+    "static/media/photo-8.jpg": "kvedula.github.io/Site/static/media/photo-8.4fa96ebf.jpg",
+    "static/media/profile-bg.jpg": "kvedula.github.io/Site/static/media/profile-bg.f4d41f15.jpg",
+    "static/media/work-1.jpg": "kvedula.github.io/Site/static/media/work-1.646f0bb7.jpg",
+    "static/media/work-2.jpg": "kvedula.github.io/Site/static/media/work-2.e5bcd802.jpg",
+    "static/media/work-3.jpg": "kvedula.github.io/Site/static/media/work-3.28163de8.jpg",
+    "static/media/work-4.jpg": "kvedula.github.io/Site/static/media/work-4.5ef5d002.jpg",
+    "static/media/work-5.jpg": "kvedula.github.io/Site/static/media/work-5.37650939.jpg"
+  }
+}
