@@ -1,4 +1,0 @@
-Site
-====
-
-My Site
