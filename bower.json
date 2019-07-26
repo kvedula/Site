@@ -1,25 +1,27 @@
 {
-  "name": "material-kit-react",
-  "homepage": "https://github.com/creativetimofficial/material-kit-react",
+  "name": "reveal.js",
+  "version": "3.6.0",
+  "main": [
+    "js/reveal.js",
+    "css/reveal.css"
+  ],
+  "homepage": "http://revealjs.com",
+  "license": "MIT",
+  "description": "The HTML Presentation Framework",
   "authors": [
-    "creative-tim"
+    "Hakim El Hattab <hakim.elhattab@gmail.com>"
   ],
-  "description": "A Badass Material-UI Kit based on Material Design",
-  "main": "dist/index.js",
-  "keywords": [
-    "material",
-    "design",
-    "material-ui",
-    "google",
-    "twitter"
-  ],
-  "license": "Creative TIM License",
+  "dependencies": {
+    "headjs": "~1.0.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/hakimel/reveal.js.git"
+  },
   "ignore": [
     "**/.*",
     "node_modules",
     "bower_components",
-    "test",
-    "tests"
-  ],
-  "private": true
+    "test"
+  ]
 }
