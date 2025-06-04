@@ -1,4 +1,4 @@
-export default function RootLayout({ children }: { children }) {
+export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head />
