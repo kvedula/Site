@@ -1,12 +1,10 @@
-// Standalone Web Page for Kamesh Vedula’s AI Agent + Resume
-// Use with Vercel or similar host
+'use client'
+import { Card, CardContent } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
+import { Download, Linkedin } from "lucide-react";
+import { motion } from "framer-motion";
 
-import { Card, CardContent } from "@/components/ui/card"
-import { Button } from "@/components/ui/button"
-import { Download, Linkedin } from "lucide-react"
-import { motion } from "framer-motion"
-
-export default function KameshPage() {
+export default function Page() {
   return (
     <main className="min-h-screen bg-gray-50 dark:bg-gray-900 p-6">
       <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.8 }} className="max-w-4xl mx-auto">
@@ -32,7 +30,7 @@ export default function KameshPage() {
           <CardContent className="p-6">
             <h2 className="text-2xl font-semibold mb-4">📄 Resume Preview</h2>
             <iframe
-              src="https://drive.google.com/file/d/1j3U4N0l3shEBfVdE90rPJ1T0NrjeAdaU/preview"
+              src="https://drive.google.com/file/d/YOUR_FILE_ID/preview"
               width="100%"
               height="500"
               allow="autoplay"
@@ -40,7 +38,7 @@ export default function KameshPage() {
             ></iframe>
             <div className="flex justify-between mt-4">
               <Button asChild>
-                <a href="https://drive.google.com/file/d/1j3U4N0l3shEBfVdE90rPJ1T0NrjeAdaU/view?usp=sharing" target="_blank">
+                <a href="https://drive.google.com/file/d/YOUR_FILE_ID/view?usp=sharing" target="_blank">
                   <Download className="mr-2 w-4 h-4" /> Download PDF
                 </a>
               </Button>
@@ -60,5 +58,5 @@ export default function KameshPage() {
         </Card>
       </motion.div>
     </main>
-  )
+  );
 }
