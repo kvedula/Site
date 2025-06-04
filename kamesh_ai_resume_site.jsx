@@ -32,7 +32,7 @@ export default function KameshPage() {
           <CardContent className="p-6">
             <h2 className="text-2xl font-semibold mb-4">📄 Resume Preview</h2>
             <iframe
-              src="https://drive.google.com/file/d/1qVZ0uFwXEXAMPLE12345/preview"
+              src="https://drive.google.com/file/d/1j3U4N0l3shEBfVdE90rPJ1T0NrjeAdaU/preview"
               width="100%"
               height="500"
               allow="autoplay"
@@ -40,7 +40,7 @@ export default function KameshPage() {
             ></iframe>
             <div className="flex justify-between mt-4">
               <Button asChild>
-                <a href="https://drive.google.com/file/d/1qVZ0uFwXEXAMPLE12345/view?usp=sharing" target="_blank">
+                <a href="https://drive.google.com/file/d/1j3U4N0l3shEBfVdE90rPJ1T0NrjeAdaU/view?usp=sharing" target="_blank">
                   <Download className="mr-2 w-4 h-4" /> Download PDF
                 </a>
               </Button>
